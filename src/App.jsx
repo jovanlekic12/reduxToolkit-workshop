@@ -17,7 +17,7 @@ function App() {
   }, [cartItems]);
 
   useEffect(() => {
-    dispatch(getCartItems());
+    dispatch(getCartItems(thunkAPI));
   }, []);
 
   if (isLoading) {
